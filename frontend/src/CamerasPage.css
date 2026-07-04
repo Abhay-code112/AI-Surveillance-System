@@ -1,0 +1,136 @@
+/* CamerasPage.css */
+
+.cameras-page .page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--space-8);
+}
+
+.cameras-page .page-header h1 {
+  font-size: var(--font-3xl);
+  font-weight: 800;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.cameras-page .page-header p {
+  color: var(--text-secondary);
+  font-size: var(--font-sm);
+  margin-top: var(--space-1);
+}
+
+/* Add form */
+.add-camera-form {
+  margin-bottom: var(--space-6);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-4);
+}
+
+.form-field label {
+  display: block;
+  font-size: var(--font-sm);
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-2);
+}
+
+.form-field input {
+  width: 100%;
+}
+
+/* Camera grid */
+.camera-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--space-6);
+}
+
+.camera-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.camera-status-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.camera-delete {
+  width: 28px; height: 28px;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--text-muted);
+  font-size: var(--font-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+}
+
+.camera-delete:hover {
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--accent-red);
+}
+
+.camera-preview {
+  height: 140px;
+  background: var(--bg-secondary);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border-color);
+}
+
+.camera-preview-icon {
+  font-size: 3rem;
+  opacity: 0.3;
+}
+
+.camera-name {
+  font-size: var(--font-lg);
+  font-weight: 700;
+}
+
+.camera-location {
+  font-size: var(--font-sm);
+  color: var(--text-muted);
+}
+
+.camera-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-2);
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--border-color);
+}
+
+.camera-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.camera-stat-val {
+  font-size: var(--font-sm);
+  font-weight: 700;
+}
+
+.camera-stat-lbl {
+  font-size: var(--font-xs);
+  color: var(--text-muted);
+}
+
+.camera-actions { display: flex; gap: 0.5rem; }
+.camera-toggle { background: transparent; border: none; font-size: 1.2rem; cursor: pointer; color: var(--text-muted); transition: color 0.2s; }
+.camera-toggle:hover { color: var(--accent-blue); }

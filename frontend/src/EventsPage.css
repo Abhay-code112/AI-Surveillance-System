@@ -1,0 +1,111 @@
+/* EventsPage.css */
+
+.events-page .page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--space-8);
+}
+
+.events-page .page-header h1 {
+  font-size: var(--font-3xl);
+  font-weight: 800;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.events-page .page-header p {
+  color: var(--text-secondary);
+  font-size: var(--font-sm);
+  margin-top: var(--space-1);
+}
+
+/* Table */
+.events-table-wrap {
+  overflow-x: auto;
+  padding: 0;
+}
+
+.events-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.events-table th {
+  text-align: left;
+  padding: var(--space-4) var(--space-5);
+  font-size: var(--font-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border-color);
+  white-space: nowrap;
+}
+
+.events-table td {
+  padding: var(--space-3) var(--space-5);
+  font-size: var(--font-sm);
+  border-bottom: 1px solid var(--border-color);
+  white-space: nowrap;
+}
+
+.events-table tbody tr {
+  transition: background var(--transition-fast);
+}
+
+.events-table tbody tr:hover {
+  background: var(--bg-card-hover);
+}
+
+.event-id {
+  color: var(--text-muted);
+  font-family: monospace;
+}
+
+.event-activity {
+  font-weight: 600;
+}
+
+.event-camera {
+  color: var(--text-secondary);
+  font-family: monospace;
+  font-size: var(--font-xs);
+}
+
+/* Confidence bar */
+.conf-bar-wrap {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-width: 100px;
+}
+
+.conf-bar {
+  height: 4px;
+  border-radius: var(--radius-full);
+  flex: 1;
+  transition: width 0.4s ease;
+}
+
+.conf-bar-wrap span {
+  font-size: var(--font-xs);
+  color: var(--text-muted);
+  min-width: 32px;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-4);
+  margin-top: var(--space-6);
+}
+
+.pagination-info {
+  font-size: var(--font-sm);
+  color: var(--text-secondary);
+}
